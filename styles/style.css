@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url(../fonts/JetBrainsMono-Medium.ttf);
+}
+@font-face {
+  font-family: "Ruhl";
+  src: url("./fonts/FrankRuhlLibre-Regular.ttf");
+}
+@font-face {
+  font-family: "Ruhl Medium";
+  src: url("./fonts/FrankRuhlLibre-Medium.ttf");
+}
+@font-face {
+  font-family: "Vibes";
+  src: url("./fonts/GreatVibes-Regular.ttf");
+}
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: var(--header1);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: var(--text);
+}
+
+h2 {
+  font-size: var(--header2);
+}
+
+h3 {
+  font-size: var(--header3);
+}
+
+h4,
+h5 {
+  font-size: var(--header4);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main-head {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem 0rem;
+}
+
+#logo {
+  font-family: "JetBrainsMono", sans-serif;
+  flex: 1 1 30rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 20rem;
+}
+
+.nav-links a {
+  font-size: 1.2rem;
+}
+
+.intro {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.intro h2 {
+  font-family: "JetBrainsMono", sans-serif;
+  font-size: 7rem;
+  background: linear-gradient(#38d39f, #38a4d3);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro h3 {
+  font-size: 5rem;
+  padding-bottom: 0.2rem;
+}
+.intro h4 {
+  font-size: 2rem;
+}
+.intro p {
+  font-size: 1.8rem;
+  padding: 1rem 0rem;
+  color: #2c2c2c;
+}
+.intro button {
+  padding: 2rem 2rem;
+  margin: 1rem 0rem;
+  background: #4c6e97;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+.intro button:hover {
+  background: #27394e;
+}
+
+.intro-social {
+  margin-top: 1.2rem;
+}
+.intro-social a {
+  margin-right: 2.4rem;
+}/*# sourceMappingURL=style.css.map */
