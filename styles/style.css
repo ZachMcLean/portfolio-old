@@ -12,20 +12,17 @@ nav {
 }
 
 #logo {
-  font-family: "JetBrainsMono", sans-serif;
   flex: 1 1 90rem;
   color: rgb(100, 255, 218);
 }
 
 .nav-links {
-  font-family: "JetBrainsMono", sans-serif;
   display: flex;
   justify-content: space-around;
   flex: 1 1 20rem;
 }
 
 .nav-links a {
-  color: rgb(100, 255, 218);
   font-size: 1.6rem;
   color: rgb(204, 214, 246);
 }
@@ -35,9 +32,8 @@ nav {
 }
 
 .intro {
-  font-family: "FiraCode Regular", sans-serif;
   min-height: 90vh;
-  width: 80%;
+  width: 70%;
   margin: auto;
   flex-wrap: wrap;
   display: flex;
@@ -56,7 +52,7 @@ nav {
 }
 .intro h3 {
   margin-top: 0.5rem;
-  font-size: 8rem;
+  font-size: 3rem;
   padding-bottom: 0.2rem;
   color: rgb(136, 146, 176);
 }
@@ -66,54 +62,116 @@ nav {
   padding: 1rem 0rem;
   color: rgb(136, 146, 176);
 }
-.intro a {
+.intro button {
+  padding: 1.5rem 1.8rem;
+  margin: 1rem 0rem;
+  background: #e63348;
+  border: none;
   color: white;
-  box-shadow: 1 20px 50px rgba(255, 255, 255, 0.05);
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+.intro button:hover {
+  background: rgba(230, 51, 72, 0.6470588235);
 }
 
 .intro-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   margin-top: 1.2rem;
 }
-.intro-social a {
-  margin-right: 2.4rem;
+.intro-social .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+}
+.intro-social .contact-button {
+  flex: 1 1 30rem;
+  background-color: #e63348;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.intro-social .social-links {
+  flex: 1 1 50rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.wrapper {
+body {
+  background: #252525;
+}
+
+@keyframes rotateClockwise {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateCounterClockwise {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.ring {
   position: relative;
-  margin-right: 30rem;
-}
-.wrapper .sol {
-  background: yellow;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 10%;
-  left: 20%;
-}
-.wrapper .earth {
-  background: green;
+  left: -10%;
+  margin-left: -100px;
+  border: 10px solid #666;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  top: 100%;
-  left: 50%;
-  animation: battle 10s linear infinite;
 }
 
-@keyframes battle {
-  from {
-    transform: rotate(0deg) translateX(150px) rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg) translateX(150px) rotate(-360deg);
-  }
+.dot {
+  position: absolute;
+  height: 250px;
+  width: 40px;
+  transform-origin: center;
+  margin-left: -20px;
 }
-@keyframes orbit {
-  100% {
-    -o-transform: rotate(360deg);
-  }
+.dot:before {
+  display: block;
+  content: "";
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
+
+.dot--one {
+  animation: rotateClockwise 4s linear infinite;
+}
+.dot--one:before {
+  background: #e6a933;
+}
+
+.dot--two {
+  animation: rotateCounterClockwise 2s linear infinite;
+}
+.dot--two:before {
+  background: #e63348;
+}
+
+.dot--three {
+  animation: rotateClockwise 7s linear infinite;
+}
+.dot--three:before {
+  background: #70b942;
+}
+
+.dot--four {
+  animation: rotateCounterClockwise 12s linear infinite;
+}
+.dot--four:before {
+  background: #009ee3;
+}
+
 .projects {
   width: 90%;
   margin: auto;
@@ -161,7 +219,8 @@ html {
 }
 
 body {
-  background-color: rgb(10, 25, 47);
+  background-color: rgb(46, 46, 46);
+  font-family: "JetBrains Mono", sans-serif;
 }
 
 h1 {
