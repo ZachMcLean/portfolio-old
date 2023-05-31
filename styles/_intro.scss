@@ -29,13 +29,16 @@ main-head {
 
 .intro {
     min-height: 90vh;
-    width: 90%;
+    width: 80%;
     margin: auto;
     flex-wrap: wrap;
     @include flex(space-between, center, row);
+    h1 {
+        font-size: 3rem;
+    }
     h2 {
         font-family: 'JetBrainsMono', sans-serif;
-        font-size: 7rem;
+        font-size: 2rem;
         // padding-top: 0.8rem;
         background: $gradient;
         background-clip: text;
@@ -46,11 +49,8 @@ main-head {
         font-size: 5rem;
         padding-bottom: 0.2rem;
     }
-    h4 {
-        font-size: 2rem;
-    }
     p {
-        font-size: 1.8rem;
+        font-size: rem;
         padding: 1rem 0rem;
         color: $gray-text;
     }

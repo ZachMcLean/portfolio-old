@@ -19,9 +19,9 @@ $gray-text: #2c2c2c;
   align-items: $align;
   flex-direction: $direction;
 }
-
-@import "global";
 @import "intro";
+@import "global";
+
 
 // main-head, nav, nav-links
 // logo, burger, & (about,projs,contact)
