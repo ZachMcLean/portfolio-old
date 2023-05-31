@@ -1,1 +1,4 @@
-## This is my read me for v1
+## Zach McLean | Web Developer 
+
+#get in contact with me! 
+
