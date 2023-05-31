@@ -13,66 +13,121 @@ main-head {
   }
   #logo {
     font-family: 'JetBrainsMono', sans-serif;
-      flex: 1 1 30rem;
+    flex: 1 1 90rem;
+    color: rgb(100, 255, 218);
   }
   .nav-links {
+    font-family: 'JetBrainsMono', sans-serif;
+    // font-family: "FiraCode Regular", sans-serif;
       display: flex;
       justify-content: space-around;
       flex: 1 1 20rem;
   }
   .nav-links a{
-    font-size: 1.2rem;
+    color: rgb(100, 255, 218);
+    font-size: 1.6rem;
+    color: rgb(204, 214, 246);
   }
-
+  .span { 
+    color: rgb(100, 255, 218);
+  }
 
 // intro section with text and button
 
 .intro {
+    // position: relative;
+    font-family: "FiraCode Regular", sans-serif;
     min-height: 90vh;
     width: 80%;
     margin: auto;
     flex-wrap: wrap;
     @include flex(space-between, center, row);
     h1 {
-        font-size: 3rem;
+        color: rgb(100, 255, 218);
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
     }
     h2 {
-        font-family: 'JetBrainsMono', sans-serif;
-        font-size: 2rem;
+        color: rgb(204, 214, 246);
+        // font-family: 'JetBrainsMono', sans-serif;
+        font-size: 8rem;
         // padding-top: 0.8rem;
-        background: $gradient;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        // background: $gradient;
+        // background-clip: text;
+        // -webkit-text-fill-color: transparent;
         // display: inline-block;
     }
     h3 {
-        font-size: 5rem;
+        margin-top: 0.5rem;
+        font-size: 8rem;
         padding-bottom: 0.2rem;
+        color: rgb(136, 146, 176);
     }
     p {
-        font-size: rem;
+        margin-top: 1rem;
+        font-size: 2rem;
         padding: 1rem 0rem;
-        color: $gray-text;
+        // color: $gray-text;
+        color: rgb(136, 146, 176);
     }
-    button {
-        padding: 2rem 2rem;
-        margin: 1rem 0rem;
-        background: #4c6e97;
-        border: none;
+    // button {
+    //     padding: 2rem 2rem;
+    //     margin: 1rem 0rem;
+    //     background: #4c6e97;
+    //     border: none;
+    //     color: white;
+    //     font-size: 1.8rem;
+    //     cursor: pointer;
+    //     transition: background 0.5s ease-in-out;
+    // }
+    // button:hover {
+    //     background: #27394e;
+    //   }
+    a {
         color: white;
-        font-size: 1.8rem;
-        cursor: pointer;
-        transition: background 0.5s ease-in-out;
+        box-shadow: 1 20px 50px rgb(255 255 255 / 5%);
     }
-    button:hover {
-        background: #27394e;
-      }
 }
 
 .intro-social {
     margin-top: 1.2rem;
     a {
         margin-right: 2.4rem;
+    }
+}
+.wrapper {
+    position: relative;
+    margin-right: 30rem;
+    .sol {
+        background: yellow;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 10%;
+        left: 20%;
+    }
+    .earth {
+        background: green;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        top: 100%;
+        left: 50%;
+        animation: battle 10s linear infinite;
+}
+
+}
+@keyframes battle {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}@keyframes orbit {
+    100% {
+        -o-transform: rotate(360deg);
     }
 }
   

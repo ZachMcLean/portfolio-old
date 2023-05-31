@@ -10,12 +10,12 @@
   }
 
   @font-face {
-    font-family: "Ruhl";
-    src: url("./fonts/FrankRuhlLibre-Regular.ttf");
+    font-family: "FiraCode Regular";
+    src: url("./fonts/FiraCode-Regular.ttf");
   }
   @font-face {
-    font-family: "Ruhl Medium";
-    src: url("./fonts/FrankRuhlLibre-Medium.ttf");
+    font-family: "FiraCode SemiBold";
+    src: url("./fonts/FiraCode-SemiBold.ttf");
   }
   @font-face {
     font-family: "Vibes";
@@ -33,6 +33,9 @@
     // --special-color: #906272;
     // --background-color: #414141;
     // --gray-text: #525252;
+  }
+  body {
+    background-color: rgb(10, 25, 47);
   }
   
   h1 {
