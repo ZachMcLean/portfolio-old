@@ -32,6 +32,7 @@ nav {
 }
 
 .intro {
+  position: relative;
   min-height: 90vh;
   width: 70%;
   margin: auto;
@@ -52,7 +53,7 @@ nav {
 }
 .intro h3 {
   margin-top: 0.5rem;
-  font-size: 3rem;
+  font-size: 6rem;
   padding-bottom: 0.2rem;
   color: rgb(136, 146, 176);
 }
@@ -89,19 +90,28 @@ nav {
   align-items: center;
   flex-direction: row;
   width: 90%;
+  flex: 1 1 10rem;
 }
 .intro-social .contact-button {
-  flex: 1 1 30rem;
+  border-radius: 50%;
   background-color: #e63348;
-  padding: 1.5rem 1rem;
+  padding: 2rem 2.4rem;
   text-align: center;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 2rem;
+  color: white;
 }
 .intro-social .social-links {
-  flex: 1 1 50rem;
+  flex: 1 1 65rem;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+}
+.intro-social .social-links li {
+  margin: 0rem 1.5rem;
+}
+.intro-social .social-links img {
+  width: 50px;
+  height: 50px;
 }
 
 body {
@@ -120,10 +130,11 @@ body {
 }
 .ring {
   position: relative;
-  left: -10%;
+  top: -180px;
+  right: 80px;
   margin-left: -100px;
-  border: 10px solid #666;
   border-radius: 50%;
+  background-color: white;
   width: 50px;
   height: 50px;
 }
@@ -132,6 +143,8 @@ body {
   position: absolute;
   height: 250px;
   width: 40px;
+  top: -100px;
+  left: 50%;
   transform-origin: center;
   margin-left: -20px;
 }
