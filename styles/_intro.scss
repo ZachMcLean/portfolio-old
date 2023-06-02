@@ -52,10 +52,10 @@ nav {
         // font-family: 'JetBrainsMono', sans-serif;
         font-size: 8rem;
         // padding-top: 0.8rem;
-        // background: $gradient;
-        // background-clip: text;
-        // -webkit-text-fill-color: transparent;
-        // display: inline-block;
+        background: $gradient;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
     }
     h3 {
         margin-top: 0.5rem;
@@ -97,9 +97,11 @@ nav {
     }
     .contact-button {
         // margin-right: 2.4rem;
-        border-radius: 50%;
-        background-color: #e63348;
-        padding: 2rem 2.4rem;
+        // border-radius: 50%;
+        // background-color: #e63348;
+        font-size: 2rem;
+        border: 2px solid #009ee3;
+        padding: 1.6rem 2.4rem;
         text-align: center;
         // border-radius: 80%;
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
@@ -129,8 +131,43 @@ body {
 
 // Keyframes
 @keyframes rotateClockwise {
+  0% {
+    transform: rotate(0deg);
+  }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes rotateClockwise2 {
+  0%{
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(540deg);
+  }
+}
+@keyframes rotateClockwise3 {
+  0%{
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(450deg);
+  }
+}
+@keyframes rotateClockwise4 {
+  0%{
+    transform: rotate(540deg);
+  }
+  100% {
+    transform: rotate(900deg);
+  }
+}
+@keyframes rotateClockwise5 {
+  0%{
+    transform: rotate(115deg);
+  }
+  100% {
+    transform: rotate(475deg);
   }
 }
 
@@ -181,7 +218,7 @@ body {
 }
 
 .dot--one {
-  animation: rotateClockwise 4s linear infinite;
+  animation: rotateClockwise4 6s linear infinite;
   
   &:before {
     background: #e6a933;
@@ -189,7 +226,7 @@ body {
 }
 
 .dot--two {
-  animation: rotateClockwise 2s linear infinite;
+  animation: rotateClockwise5 7s linear infinite;
 
   &:before {
     background: #e63348;
@@ -197,7 +234,7 @@ body {
 }
 
 .dot--three {
-  animation: rotateClockwise 7s linear infinite;
+  animation: rotateClockwise3 7s linear infinite;
   
   &:before {
     background: #70b942;
@@ -205,10 +242,17 @@ body {
 }
 
 .dot--four {
-  animation: rotateClockwise 12s linear infinite;
-  
+  animation: rotateClockwise2 12s linear infinite;
+
   &:before {
     background: #009ee3;
+  }
+}
+.dot--five {
+  animation: rotateClockwise 9s linear infinite;
+  
+  &:before {
+    background: #000000;
   }
 }
   

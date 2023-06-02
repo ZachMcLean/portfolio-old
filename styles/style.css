@@ -50,6 +50,11 @@ nav {
 .intro h2 {
   color: rgb(204, 214, 246);
   font-size: 8rem;
+  background: linear-gradient(#38d39f, #38a4d3);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 .intro h3 {
   margin-top: 0.5rem;
@@ -93,9 +98,9 @@ nav {
   flex: 1 1 10rem;
 }
 .intro-social .contact-button {
-  border-radius: 50%;
-  background-color: #e63348;
-  padding: 2rem 2.4rem;
+  font-size: 2rem;
+  border: 2px solid #009ee3;
+  padding: 1.6rem 2.4rem;
   text-align: center;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   margin-right: 2rem;
@@ -119,8 +124,43 @@ body {
 }
 
 @keyframes rotateClockwise {
+  0% {
+    transform: rotate(0deg);
+  }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes rotateClockwise2 {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(540deg);
+  }
+}
+@keyframes rotateClockwise3 {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(450deg);
+  }
+}
+@keyframes rotateClockwise4 {
+  0% {
+    transform: rotate(540deg);
+  }
+  100% {
+    transform: rotate(900deg);
+  }
+}
+@keyframes rotateClockwise5 {
+  0% {
+    transform: rotate(115deg);
+  }
+  100% {
+    transform: rotate(475deg);
   }
 }
 @keyframes rotateCounterClockwise {
@@ -158,31 +198,38 @@ body {
 }
 
 .dot--one {
-  animation: rotateClockwise 4s linear infinite;
+  animation: rotateClockwise4 6s linear infinite;
 }
 .dot--one:before {
   background: #e6a933;
 }
 
 .dot--two {
-  animation: rotateClockwise 2s linear infinite;
+  animation: rotateClockwise5 7s linear infinite;
 }
 .dot--two:before {
   background: #e63348;
 }
 
 .dot--three {
-  animation: rotateClockwise 7s linear infinite;
+  animation: rotateClockwise3 7s linear infinite;
 }
 .dot--three:before {
   background: #70b942;
 }
 
 .dot--four {
-  animation: rotateClockwise 12s linear infinite;
+  animation: rotateClockwise2 12s linear infinite;
 }
 .dot--four:before {
   background: #009ee3;
+}
+
+.dot--five {
+  animation: rotateClockwise 9s linear infinite;
+}
+.dot--five:before {
+  background: #000000;
 }
 
 .projects {
@@ -203,6 +250,42 @@ body {
 .travelly,
 .elena {
   flex: 1 1 40rem;
+}
+
+.about {
+  min-height: 80vh;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /* Red border */
+}
+.about .about-text {
+  color: white;
+}
+.about p {
+  font-size: 2rem;
+  padding: 1.2rem;
+}
+.about .about-head {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.about h2 {
+  flex: 1 1 25rem;
+  margin-right: 2rem;
+}
+.about hr {
+  border: 2px solid white;
+  flex: 1 1 50rem;
+}
+.about li {
+  font-size: 1.5rem;
 }
 
 * {
