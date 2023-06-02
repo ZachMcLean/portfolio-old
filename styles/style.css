@@ -165,7 +165,7 @@ body {
 }
 
 .dot--two {
-  animation: rotateCounterClockwise 2s linear infinite;
+  animation: rotateClockwise 2s linear infinite;
 }
 .dot--two:before {
   background: #e63348;
@@ -179,7 +179,7 @@ body {
 }
 
 .dot--four {
-  animation: rotateCounterClockwise 12s linear infinite;
+  animation: rotateClockwise 12s linear infinite;
 }
 .dot--four:before {
   background: #009ee3;

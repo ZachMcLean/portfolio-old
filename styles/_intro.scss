@@ -3,34 +3,34 @@ main-head {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   
   }
-  nav {
+nav {
       width: 90%;
       margin: auto;
       display: flex;
       align-items: center;
       min-height: 10vh;
       padding: 2rem 0rem;
-  }
-  #logo {
+}
+#logo {
     // font-family: 'JetBrainsMono', sans-serif;
     flex: 1 1 90rem;
     color: rgb(100, 255, 218);
-  }
-  .nav-links {
+}
+.nav-links {
     // font-family: 'JetBrainsMono', sans-serif;
     // font-family: "FiraCode Regular", sans-serif;
       display: flex;
       justify-content: space-around;
       flex: 1 1 20rem;
-  }
-  .nav-links a{
+}
+.nav-links a{
     // color: rgb(100, 255, 218);
     font-size: 1.6rem;
     color: rgb(204, 214, 246);
-  }
-  .span { 
+}
+.span { 
     color: rgb(100, 255, 218);
-  }
+}
 
 // intro section with text and button
 
@@ -123,51 +123,9 @@ main-head {
     }
 
 }
-// .wrapper {
-//     position: relative;
-//     margin-right: 30rem;
-//     .sol {
-//         background: yellow;
-//         border-radius: 50%;
-//         width: 50px;
-//         height: 50px;
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         // animation: battle 10s linear infinite ;
-//     }
-//     .planet {
-//         background: green;
-//         border-radius: 50%;
-//         width: 50px;
-//         height: 50px;
-//         top: 50%;
-//         left: 50%;
-//         animation: battle 10s linear infinite;
-//     }
-//     .p01 {
-//         width: 20px;
-//         height: 20px;
-//     }
-
-// }
-// @keyframes battle {
-//   from {
-//     transform: rotate(0deg) translateX(150px) rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg) translateX(150px) rotate(-360deg);
-//   }
-// }@keyframes orbit {
-//     100% {
-//         -o-transform: rotate(360deg);
-//     }
-// }
-// Base
 body {
   background: #252525;
 }
-
 
 // Keyframes
 @keyframes rotateClockwise {
@@ -231,7 +189,7 @@ body {
 }
 
 .dot--two {
-  animation: rotateCounterClockwise 2s linear infinite;
+  animation: rotateClockwise 2s linear infinite;
 
   &:before {
     background: #e63348;
@@ -247,7 +205,7 @@ body {
 }
 
 .dot--four {
-  animation: rotateCounterClockwise 12s linear infinite;
+  animation: rotateClockwise 12s linear infinite;
   
   &:before {
     background: #009ee3;
